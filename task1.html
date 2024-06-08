@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        nav {
+            height: 10vh;
+            color: white;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            padding-left: 180px;
+            padding-right: 180px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style-type: none;
+            justify-content: right;
+            padding-top: 10px;
+
+        }
+
+        ul li {
+            margin: 20px;
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+
+        .logo {
+            display: flex;
+            font-size: 32px;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        .main {
+            height: 90vh;
+            width: 100%;
+            background-color: lightgrey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .mainSection {
+            height: 85vh;
+            width: 80vw;
+            background-color: white;
+            display: flex;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            /* Add shadow */
+        }
+
+
+        .leftSection {
+            display: flex;
+            justify-content: center;
+            padding: 80px;
+            width: 40%;
+            height: 80vh;
+            width: 50%;
+            /* border: 1px solid green; */
+        }
+
+        .rightSection {
+            height: 80vh;
+            width: 50%;
+            /* border: 1px solid blue */
+        }
+
+        img {
+            display: flex;
+            margin-top: 100px;
+            margin-left: 60px;
+            border-radius: 8px;
+        }
+
+        table {
+            /* border: 1px solid red; */
+            height: 30vh;
+            width: 30vw;
+            display: flex;
+            justify-content: right;
+            font-family: sans-serif;
+            font-size: 20px;
+            border-collapse: separate;
+            border-spacing: 0 1.5em;
+            margin-top: -220px;
+            margin-left: 40px;
+        }
+
+        .para{
+            font-size: 20px;
+            font-family: sans-serif;
+            height: 60vh;
+            /* border: 1px solid purple; */
+            line-height: 30px;
+
+        }
+
+        .maincontainer {
+            padding-left: 60px;
+
+        }
+
+        .container {
+            background-color: rgb(162, 209, 247);
+            width: 100%;
+            height: 15px;
+            margin: 15px;
+            position: relative;
+        }
+
+        .skill {
+            background-color: blue;
+            padding: 5px;
+            text-align: right;
+            font-size: 20px;
+            height: 15px;
+            position: absolute;
+            top: 0;
+        }
+
+        .html {
+            width: 85%;
+
+        }
+
+        .css {
+            width: 75%;
+
+        }
+
+        .php {
+            width: 50%;
+        }
+
+        .javascript {
+            width: 90%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav>
+        <div class="logo">DevFolio</div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Work</li>
+            <li>Blog</li>
+            <li>Dropdown</li>
+            <li>Contact</li>
+        </ul>
+
+        </div>
+    </nav>
+    <div class="main">
+        <div class="mainSection">
+
+            <div class="rightSection">
+
+                <img src="male.jpg" width="200" height="200" alt="maleImg">
+
+                <div class="info">
+                    <table>
+                        <tr>
+                            <th>Name:</th>
+                            <td>Morgan Freeman</td>
+                        </tr>
+                        <tr>
+                            <th>Profile:</th>
+                            <td>Full-Stack Developer</td>
+                        </tr>
+                        <tr>
+                            <th>Email:</th>
+                            <td>contact@example.com</td>
+                        </tr>
+                        <tr>
+                            <th>Phone:</th>
+                            <td>(617) 557-0089</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="maincontainer">
+                    <h1 class="myskills" style="font-family: sans-serif; font-size: 24px;">Skills</h1><br><br>
+                    <p class="lang" style="font-size: 18px; font-family: sans-serif;">HTML 85%</p>
+
+                    <div class="container">
+                        <div class="skill html"></div>
+                    </div>
+
+                    <p class="lang" style="font-size: 18px; font-family: sans-serif;">CSS 75%</p>
+                    <div class="container">
+                        <div class="skill css"></div>
+                    </div>
+
+                    <p class="lang" style="font-size: 18px; font-family: sans-serif;">PHP 50%</p>
+                    <div class="container">
+                        <div class="skill php"></div>
+                    </div>
+
+                    <p class="lang" style="font-size: 18px; font-family: sans-serif;">JAVASCRIPT 90%</p>
+                    <div class="container">
+                        <div class="skill javascript"></div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="leftSection">
+
+                <div class="innerLeft">
+                    <div class="about">
+                        <h3 class="me" style="font-family: sans-serif; font-weight: bold; font-size: 36px; 
+                        text-decoration: underline blue;">About Me</h3><br><br>
+
+                    </div>
+                    <div class="para"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora,
+                        et suscipit? Voluptate tempora velit recusandae aut vitae dignissimos, aliquam, illum excepturi
+                    </p><br>
+
+                    <p>Totam nulla quod voluptatibus et aut? Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Tempora, et suscipit? Voluptate tempora velit recusandae aut vitae dignissimos, aliquam, illum
+                    </p><br>
+
+                    <p>Totam nulla quod voluptatibus et aut? Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Tempora, et suscipit? Voluptate tempora velit recusandae aut vitae dignissimos, aliquam, illum
+                    </p></div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
